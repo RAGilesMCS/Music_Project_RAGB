@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_baseline_arrow_back_ios_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="15dp"/>
+
+
+    <ImageView
+        android:id="@+id/album_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp"
+        android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/music_btn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/ic_baseline_play_circle_filled_24"
+        app:layout_constraintTop_toBottomOf="@+id/album_cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/album_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Album"
+        android:layout_margin="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/music_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/album_song"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Song"
+        android:layout_margin="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/album_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/album_artist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Artist"
+        android:layout_margin="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/album_song"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/album_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Year"
+        android:layout_margin="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/album_artist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/album_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Price"
+        android:layout_margin="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/album_year"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
